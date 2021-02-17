@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "shrikhand";
+  src: url(/public/fonts/Shrikhand/Shrikhand-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "roboto_regular";
+  src: url(/public/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "roboto_bold";
+  src: url(/public/fonts/Roboto/Roboto-Bold.ttf) format("truetype");
+}
+header .degrade_lineaire {
+  height: 5px;
+  background: linear-gradient(#cecdcd, #e9e5e5);
+}
+header div {
+  font-family: "roboto_regular", serif;
+  display: flex;
+  justify-content: center;
+  background-color: #e9e5e5;
+}
+header div .localisation {
+  background-color: #e9e5e5;
+  border: none;
+  margin-left: 40px;
+  font-size: 1.5em;
+  padding: auto;
+}
+header div i {
+  font-size: 1.5em;
+}
+header form {
+  background-color: #f5f3f3;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+header form h1 {
+  font-family: roboto_bold, serif;
+  font-size: 2em;
+}
+header form h2 {
+  font-family: roboto_regular, serif;
+  font-size: 1.5em;
+}
+header form .bouton_explorer {
+  margin-top: 10px;
+  margin-bottom: 60px;
+  width: 250px;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  color: white;
+  font-size: 1.2em;
+  font-family: roboto_regular, serif;
+}
+
+.image_la_palette_du_gout {
+  background-image: url(/public/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 250px;
+  height: 150px;
+}
+
+.image_la_note_enchantee {
+  background-image: url(/public/img/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 250px;
+  height: 150px;
+}
+
+.image_a_la_francaise {
+  background-image: url(/public/img/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 250px;
+  height: 150px;
+}
+
+.image_le_delice_des_sens {
+  background-image: url(/public/img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 250px;
+  height: 150px;
+}
+
+/*# sourceMappingURL=style.css.map */
