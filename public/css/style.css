@@ -12,16 +12,16 @@
 }
 header .degrade_lineaire {
   height: 5px;
-  background: linear-gradient(#cecdcd, #e9e5e5);
+  background: linear-gradient(#cecdcd, #dddddd);
 }
 header div {
   font-family: "roboto_regular", serif;
   display: flex;
   justify-content: center;
-  background-color: #e9e5e5;
+  background-color: #dddddd;
 }
 header div .localisation {
-  background-color: #e9e5e5;
+  background-color: #dddddd;
   border: none;
   margin-left: 40px;
   font-size: 1.5em;
@@ -31,7 +31,7 @@ header div i {
   font-size: 1.5em;
 }
 header form {
-  background-color: #f5f3f3;
+  background-color: #eaeaea;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -57,38 +57,174 @@ header form .bouton_explorer {
   color: white;
   font-size: 1.2em;
   font-family: roboto_regular, serif;
+  box-shadow: 6px 6px 10px #b7b7b7;
+}
+
+section h1 {
+  font-family: "roboto_bold";
+  padding-left: 120px;
+  margin-top: 45px;
+  margin-bottom: 5px;
+}
+section #etapes_fonctionnement {
+  display: flex;
+  justify-content: space-around;
+  vertical-align: middle;
+}
+section #etapes_fonctionnement mark {
+  border: 1px solid #9356DC;
+  background-color: #9356DC;
+  color: white;
+  font-family: "roboto_regular";
+  padding: 4px 10px 4px 10px;
+  border-radius: 30px;
+  position: relative;
+  right: 15px;
+  vertical-align: middle;
+}
+section #etapes_fonctionnement i {
+  padding-left: 15px;
+  padding-right: 25px;
+  font-size: 1.6em;
+  vertical-align: middle;
+  height: 30px;
+  color: #6e6d6d;
+}
+section #etapes_fonctionnement p {
+  height: 60px;
+  vertical-align: middle;
+  padding-top: 30px;
+  padding-right: 105px;
+  font-family: "roboto_regular";
+  font-size: 1.2em;
+  background-color: #eaeaea;
+  border-radius: 20px;
+  box-shadow: 6px 6px 10px #c9c9c9;
+}
+section #etapes_fonctionnement p:hover {
+  background-color: #e4d5f6;
+}
+section #etapes_fonctionnement p:hover i {
+  color: #9356DC;
+}
+
+#les_restaurants {
+  display: flex;
+  justify-content: space-around;
+}
+
+article {
+  background-color: #dddddd;
+}
+article h1 {
+  font-family: "roboto_bold";
+  padding-left: 120px;
+  margin-top: 45px;
+  margin-bottom: 5px;
+  font-size: 1.5em;
+  padding-top: 50px;
 }
 
 .image_la_palette_du_gout {
   background-image: url(/public/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: cover;
   background-position: center;
-  width: 250px;
-  height: 150px;
+  width: 350px;
+  height: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .image_la_note_enchantee {
   background-image: url(/public/img/stil-u2Lp8tXIcjw-unsplash.jpg);
   background-size: cover;
   background-position: center;
-  width: 250px;
-  height: 150px;
+  width: 350px;
+  height: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .image_a_la_francaise {
   background-image: url(/public/img/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-size: cover;
   background-position: center;
-  width: 250px;
-  height: 150px;
+  width: 350px;
+  height: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .image_le_delice_des_sens {
   background-image: url(/public/img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
   background-size: cover;
   background-position: center;
-  width: 250px;
-  height: 150px;
+  width: 350px;
+  height: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.coeur_hover {
+  display: none;
+}
+
+#les_restaurants {
+  height: 420px;
+}
+#les_restaurants #etiquette_restaurant .new {
+  width: 60px;
+  padding: 7px 10px 7px 10px;
+  text-align: center;
+  margin-left: 250px;
+  font-family: "roboto_bold";
+  font-size: 0.8em;
+  background-color: #99E2D0;
+  color: #278870;
+  position: relative;
+  top: 60px;
+}
+#les_restaurants #etiquette_restaurant .zone_legende {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid red;
+}
+#les_restaurants #etiquette_restaurant .zone_legende .nom_restaurant {
+  font-family: "roboto_regular";
+  height: 40px;
+  border: 1px solid blue;
+}
+#les_restaurants #etiquette_restaurant .zone_legende .nom_restaurant strong {
+  font-family: "roboto_bold";
+}
+#les_restaurants #etiquette_restaurant .zone_legende p {
+  font-size: 1.2em;
+  margin-top: 30px;
+  height: 0px;
+  color: black;
+}
+#les_restaurants #etiquette_restaurant .zone_legende p:hover {
+  display: none;
+}
+#les_restaurants #etiquette_restaurant .zone_legende p:hover .coeur_hover {
+  color: red;
+}
+
+footer {
+  padding-left: 20px;
+  background-color: #333333;
+  padding-top: 20px;
+}
+footer #logo_texte_footer {
+  font-family: "shrikhand";
+  font-size: 1.2em;
+  color: white;
+  margin-top: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
