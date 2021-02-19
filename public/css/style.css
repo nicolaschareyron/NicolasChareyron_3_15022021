@@ -10,6 +10,14 @@
   font-family: "roboto_bold";
   src: url(/public/fonts/Roboto/Roboto-Bold.ttf) format("truetype");
 }
+header a {
+  font-family: "shrikhand";
+  font-size: 4em;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+}
 header .degrade_lineaire {
   height: 5px;
   background: linear-gradient(#cecdcd, #dddddd);
@@ -62,7 +70,7 @@ header form .bouton_explorer {
 
 section h1 {
   font-family: "roboto_bold";
-  padding-left: 120px;
+  padding-left: 40px;
   margin-top: 45px;
   margin-bottom: 5px;
 }
@@ -90,7 +98,7 @@ section #etapes_fonctionnement i {
   height: 30px;
   color: #6e6d6d;
 }
-section #etapes_fonctionnement p {
+section #etapes_fonctionnement .etape {
   height: 60px;
   vertical-align: middle;
   padding-top: 30px;
@@ -101,10 +109,10 @@ section #etapes_fonctionnement p {
   border-radius: 20px;
   box-shadow: 6px 6px 10px #c9c9c9;
 }
-section #etapes_fonctionnement p:hover {
+section #etapes_fonctionnement .etape:hover {
   background-color: #e4d5f6;
 }
-section #etapes_fonctionnement p:hover i {
+section #etapes_fonctionnement .etape:hover i {
   color: #9356DC;
 }
 
@@ -118,9 +126,9 @@ article {
 }
 article h1 {
   font-family: "roboto_bold";
-  padding-left: 120px;
+  padding-left: 40px;
   margin-top: 45px;
-  margin-bottom: 5px;
+  margin-bottom: 25px;
   font-size: 1.5em;
   padding-top: 50px;
 }
@@ -133,6 +141,13 @@ article h1 {
   height: 200px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+.image_la_palette_du_gout a {
+  text-decoration: none;
+}
+.image_la_palette_du_gout strong {
+  text-decoration: none;
+  border: 1px solid red;
 }
 
 .image_la_note_enchantee {
@@ -165,24 +180,16 @@ article h1 {
   border-top-right-radius: 20px;
 }
 
-.coeur_hover {
+#les_restaurants {
+  height: 350px;
+}
+#les_restaurants .coeur_hover {
   display: none;
 }
-
-#les_restaurants {
-  height: 420px;
-}
-#les_restaurants #etiquette_restaurant .new {
-  width: 60px;
-  padding: 7px 10px 7px 10px;
-  text-align: center;
-  margin-left: 250px;
-  font-family: "roboto_bold";
-  font-size: 0.8em;
-  background-color: #99E2D0;
-  color: #278870;
-  position: relative;
-  top: 60px;
+#les_restaurants #etiquette_restaurant {
+  box-shadow: 6px 6px 10px #c4c4c4;
+  border-radius: 20px;
+  height: 272px;
 }
 #les_restaurants #etiquette_restaurant .zone_legende {
   display: flex;
@@ -192,39 +199,62 @@ article h1 {
   border-bottom-right-radius: 20px;
   padding-left: 15px;
   padding-right: 15px;
-  border: 1px solid red;
 }
 #les_restaurants #etiquette_restaurant .zone_legende .nom_restaurant {
   font-family: "roboto_regular";
   height: 40px;
-  border: 1px solid blue;
 }
 #les_restaurants #etiquette_restaurant .zone_legende .nom_restaurant strong {
   font-family: "roboto_bold";
 }
-#les_restaurants #etiquette_restaurant .zone_legende p {
-  font-size: 1.2em;
-  margin-top: 30px;
+#les_restaurants #etiquette_restaurant .zone_legende .coeur_on {
+  font-size: 1.3em;
+  margin-top: 20px;
+  margin-right: 15px;
   height: 0px;
   color: black;
 }
-#les_restaurants #etiquette_restaurant .zone_legende p:hover {
+#les_restaurants #etiquette_restaurant .zone_legende .coeur_on:hover {
   display: none;
 }
-#les_restaurants #etiquette_restaurant .zone_legende p:hover .coeur_hover {
-  color: red;
+#les_restaurants #etiquette_restaurant .zone_legende .coeur_on:hover .coeur_hover {
+  display: block;
 }
 
 footer {
   padding-left: 20px;
   background-color: #333333;
   padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  font-family: "roboto_regular";
+}
+footer #proposer_restaurant {
+  margin-bottom: 10px;
+}
+footer #proposer_restaurant i {
+  font-size: 0.8em;
+  padding-right: 15px;
+}
+footer #devenir_partenaire {
+  margin-bottom: 10px;
+}
+footer #devenir_partenaire i {
+  font-size: 0.8em;
+  padding-right: 10px;
+}
+footer .options_footer {
+  text-decoration: none;
+  color: white;
 }
 footer #logo_texte_footer {
   font-family: "shrikhand";
   font-size: 1.2em;
   color: white;
   margin-top: 0px;
+}
+footer #contact {
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
