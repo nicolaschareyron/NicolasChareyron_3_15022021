@@ -1,0 +1,43 @@
+@font-face
+{
+    font-family:'shrikhand'; src: url(/public/fonts/Shrikhand/Shrikhand-Regular.ttf) format('truetype');
+}
+@font-face
+{    
+    font-family:'roboto_regular'; src: url(/public/fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+}
+@font-face
+{    
+    font-family:'roboto_bold'; src: url(/public/fonts/Roboto/Roboto-Bold.ttf) format('truetype');
+}
+
+$couleur-primaire:#9356DC;
+$couleur-secondaire:#FF79DA;
+$couleur-tertiaire:#99E2D0;
+$couleur-4:#dddddd;
+$couleur-5:rgb(110, 109, 109);
+
+
+
+header
+{
+    display: flex;
+    justify-content: flex-start;
+    .fleche
+    {
+        font-size: 3.5em;
+        margin-top: 30px;
+        margin-left: 20px;
+        vertical-align: middle;
+        color: black;
+    }
+    p
+    {
+                font-size: 5em;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 40px;
+                font-family:'shrikhand';
+    }
+
+}

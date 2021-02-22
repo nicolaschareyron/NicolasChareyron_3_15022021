@@ -142,12 +142,8 @@ article h1 {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.image_la_palette_du_gout a {
-  text-decoration: none;
-}
-.image_la_palette_du_gout strong {
-  text-decoration: none;
-  border: 1px solid red;
+.image_la_palette_du_gout .new {
+  margin-top: 0px;
 }
 
 .image_la_note_enchantee {

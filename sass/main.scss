@@ -195,15 +195,12 @@ article
 {
     background-image: url(/public/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
     @include format_image;
-        a
+    
+        .new
         {
-            text-decoration: none;
+            margin-top: 0px;
         }
-        strong
-        {
-        text-decoration: none;
-        border: 1px solid red;
-        }
+        
 }
 
 .image_la_note_enchantee
@@ -237,9 +234,9 @@ article
     #etiquette_restaurant
     {    
         box-shadow: 6px 6px 10px darken($couleur-4,10);
-        
         border-radius: 20px;
         height: 272px;
+       
         .zone_legende
         {
             display: flex;
@@ -249,7 +246,7 @@ article
             border-bottom-right-radius: 20px;
             padding-left: 15px;
             padding-right: 15px;
-            
+          
            
             
             .nom_restaurant
@@ -330,3 +327,6 @@ footer
         margin-top: 10px;
     }
 }
+
+// PAGE 2 La palette du Gout
+
