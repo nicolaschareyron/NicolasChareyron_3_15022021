@@ -135,15 +135,29 @@ article h1 {
 
 .image_la_palette_du_gout {
   background-image: url(/public/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  width: 200px;
   background-size: cover;
   background-position: center;
   width: 350px;
   height: 200px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  margin: 0px;
 }
-.image_la_palette_du_gout .new {
-  margin-top: 0px;
+.image_la_palette_du_gout figcaption {
+  font-family: "roboto_bold";
+  font-size: 1.1em;
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  width: 25%;
+  position: relative;
+  top: 20px;
+  left: 220px;
+  background-color: #99E2D0;
+  color: #278870;
 }
 
 .image_la_note_enchantee {
@@ -154,6 +168,22 @@ article h1 {
   height: 200px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  margin: 0px;
+}
+.image_la_note_enchantee figcaption {
+  font-family: "roboto_bold";
+  font-size: 1.1em;
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  width: 25%;
+  position: relative;
+  top: 20px;
+  left: 220px;
+  background-color: #99E2D0;
+  color: #278870;
 }
 
 .image_a_la_francaise {
@@ -164,6 +194,23 @@ article h1 {
   height: 200px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  margin: 0px;
+}
+.image_a_la_francaise figcaption {
+  font-family: "roboto_bold";
+  font-size: 1.1em;
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  width: 25%;
+  position: relative;
+  top: 20px;
+  left: 220px;
+  background-color: #99E2D0;
+  color: #278870;
+  display: none;
 }
 
 .image_le_delice_des_sens {
@@ -174,6 +221,23 @@ article h1 {
   height: 200px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  margin: 0px;
+}
+.image_le_delice_des_sens figcaption {
+  font-family: "roboto_bold";
+  font-size: 1.1em;
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  width: 25%;
+  position: relative;
+  top: 20px;
+  left: 220px;
+  background-color: #99E2D0;
+  color: #278870;
+  display: none;
 }
 
 #les_restaurants {
@@ -181,11 +245,15 @@ article h1 {
 }
 #les_restaurants .coeur_hover {
   display: none;
+  font-size: 1.3em;
 }
 #les_restaurants #etiquette_restaurant {
   box-shadow: 6px 6px 10px #c4c4c4;
   border-radius: 20px;
   height: 272px;
+}
+#les_restaurants #etiquette_restaurant a {
+  text-decoration: none;
 }
 #les_restaurants #etiquette_restaurant .zone_legende {
   display: flex;
@@ -211,10 +279,10 @@ article h1 {
   color: black;
 }
 #les_restaurants #etiquette_restaurant .zone_legende .coeur_on:hover {
-  display: none;
-}
-#les_restaurants #etiquette_restaurant .zone_legende .coeur_on:hover .coeur_hover {
-  display: block;
+  background: url(/public/img/heart-solid.svg), no-repeat;
+  color: red;
+  height: 20px;
+  font-size: 1.3em;
 }
 
 footer {
