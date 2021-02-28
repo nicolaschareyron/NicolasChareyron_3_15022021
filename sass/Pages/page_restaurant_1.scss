@@ -16,7 +16,10 @@ $couleur-secondaire:#FF79DA;
 $couleur-tertiaire:#99E2D0;
 $couleur-4:#dddddd;
 $couleur-5:rgb(110, 109, 109);
-
+@mixin hover_bouton {
+    background: linear-gradient(170deg,(lighten($couleur-secondaire,5)),(lighten($couleur-primaire,5)));
+    box-shadow: 6px 6px 10px darken($couleur-4,25);
+}
 body
 {
     margin-left: 20px;
@@ -152,6 +155,10 @@ aside
             font-family: roboto_regular, serif;
             text-decoration: none;
             box-shadow: 6px 6px 10px darken($couleur-4,15);
+            &:hover
+            {
+                @include hover_bouton
+            }
     }
 }
 
