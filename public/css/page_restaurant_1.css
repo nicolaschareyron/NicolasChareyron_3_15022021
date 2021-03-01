@@ -128,7 +128,7 @@ aside a {
   text-decoration: none;
   box-shadow: 6px 6px 10px #b7b7b7;
 }
-aside a:hover {
+aside a:active {
   background: linear-gradient(170deg, #ff93e1, #a16be0);
   box-shadow: 6px 6px 10px #9d9d9d;
 }

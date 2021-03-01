@@ -10,6 +10,14 @@
   font-family: "roboto_bold";
   src: url(/public/fonts/Roboto/Roboto-Bold.ttf) format("truetype");
 }
+@keyframes coeur {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
 header a {
   font-family: "shrikhand";
   font-size: 4em;
@@ -52,22 +60,25 @@ header form h2 {
   font-family: roboto_regular, serif;
   font-size: 1.5em;
 }
-header form .bouton_explorer {
+header form a {
   margin-top: 10px;
   margin-bottom: 60px;
   width: 250px;
-  height: 60px;
-  border-radius: 30px;
+  height: 50px;
+  border-radius: 40px;
   border: none;
   margin-left: auto;
   margin-right: auto;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
-  color: white;
-  font-size: 1.2em;
-  font-family: roboto_regular, serif;
   box-shadow: 6px 6px 10px #b7b7b7;
+  color: white;
+  font-size: 1.3em;
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: "roboto_regular";
 }
-header form .bouton_explorer:hover {
+header form a:active {
   background: linear-gradient(170deg, #ff93e1, #a16be0);
   box-shadow: 6px 6px 10px #9d9d9d;
 }
@@ -113,10 +124,10 @@ section #etapes_fonctionnement .etape {
   border-radius: 20px;
   box-shadow: 6px 6px 10px #c9c9c9;
 }
-section #etapes_fonctionnement .etape:hover {
+section #etapes_fonctionnement .etape:active {
   background-color: #e4d5f6;
 }
-section #etapes_fonctionnement .etape:hover i {
+section #etapes_fonctionnement .etape:active i {
   color: #9356DC;
 }
 
@@ -272,21 +283,18 @@ article h1 {
   font-family: "roboto_bold";
 }
 #les_restaurants #etiquette_restaurant .zone_legende i {
+  height: 25px;
   padding-top: 25px;
   margin-right: 30px;
   font-size: 1.5em;
-  font-weight: bold;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 450ms;
 }
-#les_restaurants #etiquette_restaurant .zone_legende i:hover {
-  transform: scale(4);
+#les_restaurants #etiquette_restaurant .zone_legende i:active {
   font-weight: bold;
-  background: -webkit-gradient(linear, left top, left bottom, from(#6023a9), to(#FF79DA));
+  background: linear-gradient(180deg, #6023a9, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: coeur 1000ms;
+  transform-origin: bottom;
 }
 
 footer {

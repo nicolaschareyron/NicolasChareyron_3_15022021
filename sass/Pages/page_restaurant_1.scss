@@ -155,7 +155,7 @@ aside
             font-family: roboto_regular, serif;
             text-decoration: none;
             box-shadow: 6px 6px 10px darken($couleur-4,15);
-            &:hover
+            &:active
             {
                 @include hover_bouton
             }
