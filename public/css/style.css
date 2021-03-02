@@ -12,10 +12,10 @@
 }
 @keyframes coeur {
   0% {
-    transform: scaleY(0);
+    height: 0px;
   }
   100% {
-    transform: scaleY(1);
+    height: 25px;
   }
 }
 header a {
@@ -293,8 +293,7 @@ article h1 {
   background: linear-gradient(180deg, #6023a9, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: coeur 1000ms;
-  transform-origin: bottom;
+  animation: coeur 600ms;
 }
 
 footer {

@@ -41,13 +41,14 @@ $couleur-5:rgb(110, 109, 109);
     box-shadow: 6px 6px 10px darken($couleur-4,25);
 }
 
+
 @keyframes coeur
 {
     0% {
-        transform:scaleY(0)
+        height: 0px;
     }
     100%{
-        transform: scaleY(1);
+        height: 25px;
     }
 }
 header
@@ -366,21 +367,21 @@ article
             i
             {
                 height: 25px;
-                
                 padding-top: 25px;
                 margin-right: 30px;
                 font-size: 1.5em;
                
-                
-               
+                              
                
                 
                 
                 &:active
                 {
+                                    
                     @include coeur_hover();
-                    animation: coeur 1000ms;
-                    transform-origin: bottom;
+                    
+                    animation: coeur 600ms ;
+                    
                 }
             }
             
