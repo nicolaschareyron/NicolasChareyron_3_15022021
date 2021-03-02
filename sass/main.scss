@@ -32,7 +32,7 @@ $couleur-5:rgb(110, 109, 109);
 @mixin coeur_hover 
 {
         font-weight: bold;            
-        background: linear-gradient(180deg, (darken($couleur-primaire,20)), ($couleur-secondaire));
+        background: linear-gradient(180deg, (darken($couleur-primaire,30)), (lighten($couleur-secondaire,5)));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 }
@@ -380,7 +380,8 @@ article
                                     
                     @include coeur_hover();
                     
-                    animation: coeur 600ms ;
+                    animation: coeur  500ms ease-in-out;
+                    
                     
                 }
             }
@@ -435,5 +436,5 @@ footer
     }
 }
 
-// PAGE 2 La palette du Gout
+
 

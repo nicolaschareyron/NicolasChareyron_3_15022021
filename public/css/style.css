@@ -290,10 +290,10 @@ article h1 {
 }
 #les_restaurants #etiquette_restaurant .zone_legende i:active {
   font-weight: bold;
-  background: linear-gradient(180deg, #6023a9, #FF79DA);
+  background: linear-gradient(180deg, #481a7f, #ff93e1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: coeur 600ms;
+  animation: coeur 500ms ease-in-out;
 }
 
 footer {
