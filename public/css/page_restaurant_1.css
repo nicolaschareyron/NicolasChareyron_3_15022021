@@ -14,12 +14,29 @@
   0% {
     opacity: 0;
     position: relative;
-    bottom: -30px;
+    bottom: -40px;
+  }
+  25% {
+    opacity: 0;
   }
   100% {
     opacity: 1;
     position: relative;
     bottom: 0px;
+  }
+}
+@keyframes validation {
+  0% {
+    position: initial;
+    /*position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;*/
+  }
+  100% {
+    position: relative;
+    right: 164px;
   }
 }
 body {
@@ -93,7 +110,7 @@ section article .petit_trait {
   margin-bottom: 30px;
   margin-top: -10px;
 }
-section article .un_plat {
+section article .un_plat_1 {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -103,18 +120,41 @@ section article .un_plat {
   padding-left: 15px;
   padding-right: 35px;
   border-radius: 20px;
-  animation: un_plat 1s ease-in-out 50ms both;
+  animation: un_plat 1200ms ease-in-out 50ms both;
 }
-section article .un_plat h3 {
+section article .un_plat_1:hover .choisir_le_plat {
+  animation: validation 1000ms ease-in-out both;
+}
+section article .un_plat_1 h3 {
   font-family: "roboto_bold";
   font-size: 1.5em;
 }
-section article .un_plat p {
+section article .un_plat_1 p {
   font-size: 1.2em;
 }
-section article .un_plat .le_prix {
+section article .un_plat_1 .le_prix {
   font-family: "roboto_bold";
   font-size: 1.4em;
+}
+section article .un_plat_1 .choisir_le_plat {
+  border: 1px solid blue;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #99E2D0;
+  position: relative;
+  left: 164px;
+}
+section article .un_plat_1 .choisir_le_plat i {
+  border: 1px solid red;
+  font-size: 1.5em;
+  margin-bottom: 41px;
+  margin-top: 41px;
+  margin-right: 45px;
+  margin-left: 45px;
+  padding: 5px;
+  border-radius: 50px;
+  background-color: white;
+  color: #99E2D0;
 }
 section article .un_plat_2 {
   display: flex;
@@ -126,7 +166,7 @@ section article .un_plat_2 {
   padding-left: 15px;
   padding-right: 35px;
   border-radius: 20px;
-  animation: un_plat 1s ease-in-out 300ms both;
+  animation: un_plat 1200ms ease-in-out 300ms both;
 }
 section article .un_plat_2 h3 {
   font-family: "roboto_bold";
@@ -149,7 +189,7 @@ section article .un_plat_3 {
   padding-left: 15px;
   padding-right: 35px;
   border-radius: 20px;
-  animation: un_plat 1s ease-in-out 600ms both;
+  animation: un_plat 1200ms ease-in-out 600ms both;
 }
 section article .un_plat_3 h3 {
   font-family: "roboto_bold";
