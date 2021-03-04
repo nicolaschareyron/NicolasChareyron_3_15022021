@@ -42,24 +42,18 @@ $couleur-5:rgb(110, 109, 109);
 
 @keyframes validation
 {
-    
     0%{
-        
-        position: initial;
-        /*position: relative;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;*/
-        
+       
     }
     100%{
-        
-        position: relative;
-        right: 164px;
-        
+        transform: translate(-129px);
         }
-    
+}
+
+@keyframes rotation_validation
+{
+    0%{}
+    100%{transform:rotate(360deg)}
 }
 body
 {
@@ -156,14 +150,26 @@ section
             border-radius: 20px;
 
             animation: un_plat 1200ms ease-in-out 50ms both;
+
+
             
-            //overflow: hidden;
-            &:hover
+            overflow: hidden;
+            &:active
                 {
                     .choisir_le_plat{
-                    animation: validation 1000ms ease-in-out both;
+                    animation: validation 300ms linear both;
                     }
-                }
+                } 
+            
+            &:active
+            {       
+                    .valide
+                    {
+                    animation: rotation_validation 300ms ease-in-out 100ms both;
+                    }
+                }       
+                                       
+                
             h3
             {
                 font-family: 'roboto_bold';
@@ -180,27 +186,30 @@ section
             }
             .choisir_le_plat
             {
-                border: 1px solid blue;
+                //border: 1px solid blue;
                 border-top-right-radius: 20px;
                 border-bottom-right-radius: 20px;
                 background-color: $couleur-tertiaire;
                 position: relative;
                 left: 164px;
                 
-                i
+                .valide
                 {
                 //display: none;
-                //overflow: hidden;
-                border: 1px solid red;
+                transform:rotate(90deg);
+                height: 26px;
+                border: 1px solid $couleur-tertiaire;
                 font-size: 1.5em;
-                margin-bottom: 41px;
-                margin-top: 41px;
+                margin-bottom: 45px;
+                margin-top: 45px;
                 margin-right: 45px;
                 margin-left: 45px;
                 padding: 5px;
-                border-radius: 50px;
+                border-radius: 40px;
                 background-color: white;
                 color: $couleur-tertiaire;
+                
+                //transition: rotation_validation 300ms ease-in-out;
                 }
                 
             }

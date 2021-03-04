@@ -26,17 +26,13 @@
   }
 }
 @keyframes validation {
-  0% {
-    position: initial;
-    /*position: relative;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;*/
-  }
   100% {
-    position: relative;
-    right: 164px;
+    transform: translate(-129px);
+  }
+}
+@keyframes rotation_validation {
+  100% {
+    transform: rotate(360deg);
   }
 }
 body {
@@ -121,9 +117,13 @@ section article .un_plat_1 {
   padding-right: 35px;
   border-radius: 20px;
   animation: un_plat 1200ms ease-in-out 50ms both;
+  overflow: hidden;
 }
-section article .un_plat_1:hover .choisir_le_plat {
-  animation: validation 1000ms ease-in-out both;
+section article .un_plat_1:active .choisir_le_plat {
+  animation: validation 300ms linear both;
+}
+section article .un_plat_1:active .valide {
+  animation: rotation_validation 300ms ease-in-out 100ms both;
 }
 section article .un_plat_1 h3 {
   font-family: "roboto_bold";
@@ -137,22 +137,23 @@ section article .un_plat_1 .le_prix {
   font-size: 1.4em;
 }
 section article .un_plat_1 .choisir_le_plat {
-  border: 1px solid blue;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: #99E2D0;
   position: relative;
   left: 164px;
 }
-section article .un_plat_1 .choisir_le_plat i {
-  border: 1px solid red;
+section article .un_plat_1 .choisir_le_plat .valide {
+  transform: rotate(90deg);
+  height: 26px;
+  border: 1px solid #99E2D0;
   font-size: 1.5em;
-  margin-bottom: 41px;
-  margin-top: 41px;
+  margin-bottom: 45px;
+  margin-top: 45px;
   margin-right: 45px;
   margin-left: 45px;
   padding: 5px;
-  border-radius: 50px;
+  border-radius: 40px;
   background-color: white;
   color: #99E2D0;
 }
