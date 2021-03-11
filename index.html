@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./public/css/style.css"/>
     <link rel="stylesheet" href="./public/fonts/fontawesome-free-5.15.1-web/css/all.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>OhMyFood - Réserver le menu qui vous convient</title>
 </head>
 <body>
@@ -11,9 +12,9 @@
             <a href="#">ohmyfood</a>
             <div class="degrade_lineaire"></div>
             <form method="post" action="#">
-                <div>
-                    <p><i class="fas fa-map-marker-alt"></i></p>
-                    <p><input type="text" name="localisation" class="localisation" value="Paris, Belleville"</p>
+                <div id="choisir_ville">
+                    <p id="icone_localisation"><i class="fas fa-map-marker-alt"></i></p>
+                    <p><input type="text" name="localisation" class="localisation" value="Paris, Belleville"></p>
                 </div>
                 <h1>Réservez le menu qui vous convient</h1>
                 <h2>Découvrez des restaurants d'exception, séléctionnés par nos soins.</h2>
@@ -34,7 +35,7 @@
         <h1>Restaurants</h1>     
         <div id="les_restaurants">
             
-            <div id="etiquette_restaurant">
+            <div class="etiquette_restaurant">
                 <a href="page_restaurant_1.html">
                     <figure class="image_la_palette_du_gout">
                         <figcaption>Nouveau</figcaption>
@@ -50,7 +51,7 @@
                 </div>
             </div>
             
-            <div id="etiquette_restaurant">
+            <div class="etiquette_restaurant">
                 
                 <a href="index_page_3.html">
                     <figure class="image_la_note_enchantee">
@@ -65,7 +66,7 @@
                     <i class="far fa-heart"></i>
                 </div>
             </div>
-            <div id="etiquette_restaurant">
+            <div class="etiquette_restaurant">
                 
                 <a href="index_page_4.html">
                     <figure class="image_a_la_francaise">
@@ -80,7 +81,7 @@
                     <i class="far fa-heart"></i>
                 </div>
             </div>
-            <div id="etiquette_restaurant">
+            <div class="etiquette_restaurant">
                 
                 <a href="index_page_5.html">
                     <figure class="image_le_delice_des_sens">
