@@ -39,19 +39,22 @@ $couleur-5:rgb(110, 109, 109);
 
 @mixin encadre_plat 
 {
+    //border:1px solid pink;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    //justify-content: space-between;
+    justify-content: flex-start;
     background-color: white;
-    width: 550px;
+    //background-color: $couleur-4;
+    //width: 550px;
+    //width: 80%;
     height: 100px;
     margin-bottom: 15px;
     margin-top: 10px;
     margin-right: 15px;
-    padding-left: 15px;
+    //padding-left: 15px;
     border-radius: 20px;
     box-shadow: 6px 6px 10px darken($couleur-4,10);
-    overflow: hidden;
+    //overflow: hidden;
 }
 @keyframes un_plat
 { 
@@ -75,17 +78,27 @@ $couleur-5:rgb(110, 109, 109);
 @keyframes animation_prix
 {
     0%{}
-    100%{transform: translate(-90px);}
+    100%{transform: translate(-50px);}
+}
+@keyframes animation_prix_responsive
+{
+    0%{}
+    100%{transform: translate(-65px);}
 }
 @keyframes validation
 {
-    0%{}
+    0%{  }
     100%{transform: translate(-90px);}
 }
-
+@keyframes validation_responsive
+{
+    0%{}
+    100%{transform: translate(-110px);}
+}
 @keyframes rotation_validation
 {
     0%{}
+    //50%{}
     100%{transform:rotate(360deg)}
 }
 
@@ -137,8 +150,8 @@ section
         {
             background-color: $couleur-4;
             margin-bottom: 0px;
-            width: 100%;
-            height: 55px;
+            //width: 100%;
+            //height: 55px;
             padding-top: 20px;
             padding-left: 35px;
             margin-left: 25px;
@@ -152,7 +165,7 @@ section
             
 
             font-size: 2.5em;
-            height: 39px;
+            //height: 39px;
             margin-right: 80px;
             
             padding-top: 39px;
@@ -169,34 +182,43 @@ section
         background-color: $couleur-4;
         margin-top: -80px;
         padding-top: 100px;
-        padding-left: 60px;
+        //padding-left: 60px;
         font-family: 'roboto_regular';
         display: flex;
-        justify-content: space-between;
-        padding-right: 60px;
+        justify-content: space-around;
+        //justify-content: space-between;
+        //padding-right: 60px;
         padding-bottom: 80px;
         border-top-right-radius: 45px;
         border-top-left-radius: 45px;
 
         .un_plat
         {
-            height: 100%;
+            //height: 100%;
         }
 
         .nom_et_recette
         {
-            width: 100%;
-            height: 100%;
+            //width: 100%;
+            //height: 100%;
             display: flex;
             flex-direction: column;
         }
 
-       .description_du_plat
+       //.description_du_plat
+       .un_plat
        {
+           //border: 1px solid red;
            display: flex;
            justify-content: space-between;
-           width: 500px;
+           //width: 500px;
+           width: 100%;
            height: 100px;
+           padding-left: 15px;
+           border-radius: 20px;
+           background-color: white;
+           
+           overflow: hidden;
        }
 
         .petit_trait
@@ -207,9 +229,14 @@ section
             margin-bottom: 30px;
             margin-top: -10px;
         }
-
+        .nom_et_recette
+        {
+            width: 100%;
+        }
         .nom_de_la_recette
         {
+            //border: 1px solid blue;
+            //width: 100%;
             font-family: 'roboto_bold';
             font-size: 1.7em;
             margin-top: 10px;
@@ -221,6 +248,8 @@ section
 
         .la_recette
         {
+            //border: 1px solid green;
+            //width: 100%;
             font-size: 1.3em;
             margin-top: 15px;
             margin-bottom: 10px;
@@ -231,19 +260,24 @@ section
 
         .le_prix
         {
+            //border: 1px solid brown;
             font-family: 'roboto_bold';
             font-size: 1.4em;
             height: 100%;
             padding-top: 53px;
+            
             margin-top: 0px;
             margin-bottom: 0px;
+            //margin-left: 20px;
+            position: relative;
+            left: 60px;
         }
 
         .choisir_le_plat
             {
             background-color: $couleur-tertiaire;
             position: relative;
-            left: 50px;
+            left: 100px;
             height: 100px;
 
                 .valide
@@ -275,21 +309,22 @@ section
 
                 &:active
                 {
+                    
                     .choisir_le_plat
                     {
-                    animation: validation 300ms linear both;
+                    animation: validation 300ms ease-in-out both;
                     }
                     .valide
                     {
-                    animation: rotation_validation 300ms ease-in-out 100ms both;
+                    animation: rotation_validation 400ms ease-in-out  both;
                     }
                     .le_prix
                     {
-                    animation: animation_prix 300ms linear both;
+                    animation: animation_prix 300ms ease-in-out both;
                     }
                     .nom_et_recette
                     {
-                    animation: trois_points 300ms linear both;
+                    animation: trois_points 300ms ease-in-out both;
                     }
                 }    
             }
@@ -303,19 +338,19 @@ section
                 {
                     .choisir_le_plat
                     {
-                    animation: validation 300ms linear both;
+                    animation: validation 300ms ease-in-out both;
                     }
                     .valide
                     {
-                    animation: rotation_validation 300ms ease-in-out 100ms both;
+                    animation: rotation_validation 300ms ease-in-out  both;
                     }
                     .le_prix
                     {
-                    animation: animation_prix 300ms linear both;
+                    animation: animation_prix 300ms ease-in-out both;
                     }
                     .nom_et_recette
                     {
-                    animation: trois_points 300ms linear both;
+                    animation: trois_points 300ms ease-in-out both;
                     }
                 }      
             }
@@ -329,19 +364,19 @@ section
                 {
                     .choisir_le_plat
                     {
-                    animation: validation 300ms linear both;
+                    animation: validation 300ms ease-in-out both;
                     }
                     .valide
                     {
-                    animation: rotation_validation 300ms ease-in-out 100ms both;
+                    animation: rotation_validation 300ms ease-in-out  both;
                     }
                     .le_prix
                     {
-                    animation: animation_prix 300ms linear both;
+                    animation: animation_prix 300ms ease-in-out both;
                     }
                     .nom_et_recette
                     {
-                    animation: trois_points 300ms linear both;
+                    animation: trois_points 300ms ease-in-out both;
                     }
                 }  
             }
@@ -425,4 +460,137 @@ footer
         margin-top: 10px;
     }
 }
+@media only screen and (max-width: 600px)
+{
+    /**
+    {
+        border: 1px solid black;
+    }*/
+    body
+    {
+        width: 100%;
+        margin: 0px;
+    }
+    header
+    {
+        //border: 1px solid red;
+        width: 100%;
+        .fleche
+        {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+        p
+        {
+            font-size: 2.5em;
+            padding-top: 10px;
+            margin-left: 60px;
+        }
+    }
 
+    section
+    {
+        #entete_restaurant
+        {
+            width: 100%;
+            height: 300px;
+            //border: 1px solid green;
+            h1
+            {
+                padding-left: 0px;
+                font-size: 1.8em;
+            }
+            i
+            {
+                margin-right: 40px;
+                margin-bottom: 10px;
+                font-size: 1.7em;
+            }
+        }
+        
+        article
+        {
+            //border: 1px solid blue;
+            padding-left: 0px;
+            padding-right: 0px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            
+        }
+        .entrees
+        {
+            border: 1px solid red;
+            padding-left: 10px;
+            h2
+            {
+                font-size: 1.3em;
+            }
+        }
+        .plats
+        {
+            border: 1px solid red;
+            padding-left: 10px;
+            h2
+            {
+                font-size: 1.3em;
+            } 
+        }
+        .desserts
+        {
+            border: 1px solid red;
+            padding-left: 10px;
+            h2
+            {
+                font-size: 1.3em;
+            } 
+        }
+        .pastille_1
+        {
+            
+        }
+        .un_plat
+        {
+            border: 1px solid brown;
+            //width: 100%;
+            display: flex;
+                justify-content: space-between;
+
+            .le_prix
+                {
+                    border: 1px solid black;
+                    position: relative;
+                  left: 0px;
+                }
+            .nom_et_recette
+            {
+                border: 1px solid blue;
+                min-width: 85%;
+                
+                
+                .nom_de_la_recette
+                {
+                    font-size: 1.3em;
+                }
+                .la_recette
+                {
+                    font-size: 1.2em;
+                }
+                
+
+
+
+            }
+        }
+
+
+
+
+
+
+        
+    }
+
+
+
+}
