@@ -83,7 +83,7 @@ $couleur-5:rgb(110, 109, 109);
 @keyframes animation_prix_responsive
 {
     0%{}
-    100%{transform: translate(-65px);}
+    100%{transform: translate(-0px);}
 }
 @keyframes validation
 {
@@ -93,7 +93,7 @@ $couleur-5:rgb(110, 109, 109);
 @keyframes validation_responsive
 {
     0%{}
-    100%{transform: translate(-110px);}
+    100%{transform: translate(-90px);}
 }
 @keyframes rotation_validation
 {
@@ -107,7 +107,13 @@ $couleur-5:rgb(110, 109, 109);
     0%{}
     100%{width: 70%;}
 }
-
+@keyframes trois_points_responsive
+{
+    
+    0%{}
+    100%{min-width: 50%;}
+    
+}
 body
 {
     margin-left: 20px;
@@ -316,7 +322,7 @@ section
                     }
                     .valide
                     {
-                    animation: rotation_validation 400ms ease-in-out  both;
+                    animation: rotation_validation 400ms ease-in-out both;
                     }
                     .le_prix
                     {
@@ -462,10 +468,7 @@ footer
 }
 @media only screen and (max-width: 600px)
 {
-    /**
-    {
-        border: 1px solid black;
-    }*/
+    
     body
     {
         width: 100%;
@@ -516,11 +519,82 @@ footer
             display: flex;
             flex-direction: column;
             width: 100%;
+
+            .pastille_1
+        {
+            &:active
+                {
+                    
+                    .choisir_le_plat
+                    {
+                    animation: validation_responsive 300ms ease-in-out both;
+                    }
+                    .valide
+                    {
+                    animation: rotation_validation 400ms ease-in-out  both;
+                    }
+                    .le_prix
+                    {
+                    animation: animation_prix_responsive 300ms ease-in-out both;
+                    }
+                    .nom_et_recette
+                    {
+                        width: 70%;
+                    animation: trois_points_responsive 300ms ease-in-out both;
+                    }
+                }
+        }
+        .pastille_2
+        {
+            &:active
+                {
+                    
+                    .choisir_le_plat
+                    {
+                    animation: validation_responsive 300ms ease-in-out both;
+                    }
+                    .valide
+                    {
+                    animation: rotation_validation 400ms ease-in-out  both;
+                    }
+                    .le_prix
+                    {
+                    animation: animation_prix_responsive 300ms ease-in-out both;
+                    }
+                    .nom_et_recette
+                    {
+                    animation: trois_points_responsive 300ms ease-in-out both;
+                    }
+                }
+        }
+        .pastille_3
+        {
+            &:active
+                {
+                    
+                    .choisir_le_plat
+                    {
+                    animation: validation_responsive 300ms ease-in-out both;
+                    }
+                    .valide
+                    {
+                    animation: rotation_validation 400ms ease-in-out  both;
+                    }
+                    .le_prix
+                    {
+                    animation: animation_prix_responsive 300ms ease-in-out both;
+                    }
+                    .nom_et_recette
+                    {
+                    animation: trois_points_responsive 300ms ease-in-out both;
+                    }
+                }
+        }
             
         }
         .entrees
         {
-            border: 1px solid red;
+            
             padding-left: 10px;
             h2
             {
@@ -529,7 +603,7 @@ footer
         }
         .plats
         {
-            border: 1px solid red;
+            
             padding-left: 10px;
             h2
             {
@@ -538,51 +612,61 @@ footer
         }
         .desserts
         {
-            border: 1px solid red;
+            
             padding-left: 10px;
             h2
             {
                 font-size: 1.3em;
             } 
         }
-        .pastille_1
-        {
-            
-        }
+        
         .un_plat
         {
-            border: 1px solid brown;
+            
             //width: 100%;
             display: flex;
                 justify-content: space-between;
 
             .le_prix
                 {
-                    border: 1px solid black;
+                    
+                    padding-top: 51px;
                     position: relative;
                   left: 0px;
                 }
             .nom_et_recette
             {
-                border: 1px solid blue;
+                
                 min-width: 85%;
+                
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
                 
                 
                 .nom_de_la_recette
                 {
                     font-size: 1.3em;
+                    width: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+
                 }
                 .la_recette
                 {
                     font-size: 1.2em;
+                    margin-bottom: 0px;
+                    margin-top: 20px;
+                    width: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                 }
                 
-
-
-
             }
         }
-
+        
 
 
 

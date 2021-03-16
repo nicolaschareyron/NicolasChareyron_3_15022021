@@ -40,7 +40,7 @@
 }
 @keyframes animation_prix_responsive {
   100% {
-    transform: translate(-65px);
+    transform: translate(0px);
   }
 }
 @keyframes validation {
@@ -50,7 +50,7 @@
 }
 @keyframes validation_responsive {
   100% {
-    transform: translate(-110px);
+    transform: translate(-90px);
   }
 }
 @keyframes rotation_validation {
@@ -61,6 +61,11 @@
 @keyframes trois_points {
   100% {
     width: 70%;
+  }
+}
+@keyframes trois_points_responsive {
+  100% {
+    min-width: 50%;
   }
 }
 body {
@@ -342,10 +347,6 @@ footer #contact {
 }
 
 @media only screen and (max-width: 600px) {
-  /**
-  {
-      border: 1px solid black;
-  }*/
   body {
     width: 100%;
     margin: 0px;
@@ -384,46 +385,91 @@ footer #contact {
     flex-direction: column;
     width: 100%;
   }
+  section article .pastille_1:active .choisir_le_plat {
+    animation: validation_responsive 300ms ease-in-out both;
+  }
+  section article .pastille_1:active .valide {
+    animation: rotation_validation 400ms ease-in-out both;
+  }
+  section article .pastille_1:active .le_prix {
+    animation: animation_prix_responsive 300ms ease-in-out both;
+  }
+  section article .pastille_1:active .nom_et_recette {
+    width: 70%;
+    animation: trois_points_responsive 300ms ease-in-out both;
+  }
+  section article .pastille_2:active .choisir_le_plat {
+    animation: validation_responsive 300ms ease-in-out both;
+  }
+  section article .pastille_2:active .valide {
+    animation: rotation_validation 400ms ease-in-out both;
+  }
+  section article .pastille_2:active .le_prix {
+    animation: animation_prix_responsive 300ms ease-in-out both;
+  }
+  section article .pastille_2:active .nom_et_recette {
+    animation: trois_points_responsive 300ms ease-in-out both;
+  }
+  section article .pastille_3:active .choisir_le_plat {
+    animation: validation_responsive 300ms ease-in-out both;
+  }
+  section article .pastille_3:active .valide {
+    animation: rotation_validation 400ms ease-in-out both;
+  }
+  section article .pastille_3:active .le_prix {
+    animation: animation_prix_responsive 300ms ease-in-out both;
+  }
+  section article .pastille_3:active .nom_et_recette {
+    animation: trois_points_responsive 300ms ease-in-out both;
+  }
   section .entrees {
-    border: 1px solid red;
     padding-left: 10px;
   }
   section .entrees h2 {
     font-size: 1.3em;
   }
   section .plats {
-    border: 1px solid red;
     padding-left: 10px;
   }
   section .plats h2 {
     font-size: 1.3em;
   }
   section .desserts {
-    border: 1px solid red;
     padding-left: 10px;
   }
   section .desserts h2 {
     font-size: 1.3em;
   }
   section .un_plat {
-    border: 1px solid brown;
     display: flex;
     justify-content: space-between;
   }
   section .un_plat .le_prix {
-    border: 1px solid black;
+    padding-top: 51px;
     position: relative;
     left: 0px;
   }
   section .un_plat .nom_et_recette {
-    border: 1px solid blue;
     min-width: 85%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   section .un_plat .nom_et_recette .nom_de_la_recette {
     font-size: 1.3em;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   section .un_plat .nom_et_recette .la_recette {
     font-size: 1.2em;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
