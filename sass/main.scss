@@ -40,18 +40,92 @@ $couleur-5:rgb(110, 109, 109);
     background: linear-gradient(170deg,(lighten($couleur-secondaire,5)),(lighten($couleur-primaire,5)));
     box-shadow: 6px 6px 10px darken($couleur-4,25);
 }
-
+@keyframes loading
+{
+    0%
+    {
+        opacity: 0;
+    }
+    99%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+@keyframes hide_loading
+{
+    
+    99%
+    {
+        opacity: 1;
+        width: 250px;
+        padding: 20px;
+    }
+    100%
+    {
+        transform: rotate(360deg);
+        opacity: 0;
+        width: 0%;
+        padding: 0px;
+    }
+    
+}
 
 @keyframes coeur
 {
     0% {
         height: 0px;
     }
-    100%{
+    
+    
+      100%{
         height: 25px;
         
     }
 }
+body
+{
+    display: flex;
+}
+#loading
+{
+
+        font-size: 15em;
+        //height: 255px;
+        height: 100%;
+        
+        width: 250px;
+        padding: 20px;
+        padding-bottom: 5px;
+        background:linear-gradient(170deg,$couleur-secondaire,$couleur-primaire);
+        box-shadow: 6px 6px 10px darken($couleur-4,15);
+        color: white;
+        border-radius: 50px;
+        position: relative;
+        left: 40%;
+        top: 250px;
+        transform-origin: 125px 50%;
+        animation:hide_loading 3s ease-in-out both;
+            p
+            {
+                font-size: 0.12em;
+                margin-top: 0px;
+                padding-left: 30px;
+                font-family: 'shrikhand';
+                
+            }
+        
+}
+
+#conteneur
+{
+    animation: loading 3100ms ease-in-out both;
+    width: 100%;
+}
+
 header
 {
     a
@@ -421,14 +495,40 @@ footer
     }
 }
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 1600px)
 {
-    
+   
     body
     {
         width: 100%;
         margin: 0px;
+        
+        #loading
+        {
+        font-size: 10em;
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+        padding-bottom: 5px;
+        
+        color: white;
+        border-radius: 50px;
+        position: relative;
+        left: 30%;
+        top: 100px;
+        transform-origin: 50% 50%;
+            p
+            {
+                font-size: 0.12em;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                padding-left: 20px;
+                font-family: 'shrikhand';
+                
+            }
+       
     }
+}
     header
     {
         
