@@ -93,8 +93,8 @@ header p {
 
 section #entete_restaurant {
   background-size: cover;
-  background-position: center;
-  background-image: url(/public/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-position: 0 65%;
+  background-image: url(/public/img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
   height: 400px;
   display: flex;
   justify-content: space-between;
@@ -372,6 +372,7 @@ footer #contact {
   section #entete_restaurant h1 {
     padding-left: 0px;
     font-size: 1.8em;
+    margin-left: 10px;
   }
   section #entete_restaurant i {
     margin-right: 40px;

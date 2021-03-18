@@ -1,15 +1,13 @@
+////// FONTS /////////
+
 @font-face
-{
-    font-family:'shrikhand'; src: url(/public/fonts/Shrikhand/Shrikhand-Regular.ttf) format('truetype');
-}
+{font-family:'shrikhand'; src: url(/public/fonts/Shrikhand/Shrikhand-Regular.ttf) format('truetype');}
 @font-face
-{    
-    font-family:'roboto_regular'; src: url(/public/fonts/Roboto/Roboto-Regular.ttf) format('truetype');
-}
+{font-family:'roboto_regular'; src: url(/public/fonts/Roboto/Roboto-Regular.ttf) format('truetype');}
 @font-face
-{    
-    font-family:'roboto_bold'; src: url(/public/fonts/Roboto/Roboto-Bold.ttf) format('truetype');
-}
+{font-family:'roboto_bold'; src: url(/public/fonts/Roboto/Roboto-Bold.ttf) format('truetype');}
+
+///////////// VARIABLES ///////////
 
 $couleur-primaire:#9356DC;
 $couleur-secondaire:#FF79DA;
@@ -17,8 +15,9 @@ $couleur-tertiaire:#99E2D0;
 $couleur-4:#dddddd;
 $couleur-5:rgb(110, 109, 109);
  
+/////////// MIXIN ////////////
 
-@mixin format_image
+@mixin format_image // Mise en format des photos des restaurants
 {
     background-size: cover;
     background-position: center;
@@ -29,18 +28,24 @@ $couleur-5:rgb(110, 109, 109);
     margin:0px
 }
 
-@mixin coeur_hover 
+@mixin coeur_hover // Format du remplissage des icones en coeurs
 {
-        font-weight: bold;            
-        background: linear-gradient(180deg, (darken($couleur-primaire,30)), (lighten($couleur-secondaire,5)));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    font-weight: bold;            
+    background: linear-gradient(180deg, (darken($couleur-primaire,30)), (lighten($couleur-secondaire,5)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-@mixin hover_bouton {
+
+@mixin hover_bouton // La couleur des boutons quand on clique dessus 
+{
     background: linear-gradient(170deg,(lighten($couleur-secondaire,5)),(lighten($couleur-primaire,5)));
     box-shadow: 6px 6px 10px darken($couleur-4,25);
 }
-@keyframes loading
+
+///////// KEYFRAMES //////////
+
+// Animation pour faire apparaitre la page après le loading
+@keyframes loading  
 {
     0%
     {
@@ -55,6 +60,8 @@ $couleur-5:rgb(110, 109, 109);
         opacity: 1;
     }
 }
+
+// Animation du loader spinner
 @keyframes hide_loading
 {
     
@@ -74,6 +81,7 @@ $couleur-5:rgb(110, 109, 109);
     
 }
 
+// Animation remplissage du coeur 
 @keyframes coeur
 {
     0% {
@@ -86,17 +94,17 @@ $couleur-5:rgb(110, 109, 109);
         
     }
 }
+
+////////// MISE EN FORME ///////////
+
 body
 {
     display: flex;
 }
 #loading
 {
-
         font-size: 15em;
-        //height: 255px;
         height: 100%;
-        
         width: 250px;
         padding: 20px;
         padding-bottom: 5px;
@@ -115,9 +123,7 @@ body
                 margin-top: 0px;
                 padding-left: 30px;
                 font-family: 'shrikhand';
-                
             }
-        
 }
 
 #conteneur
@@ -136,11 +142,9 @@ header
         margin-bottom: 10px;
         text-decoration: none;
         color: black;
-       
     }
     .degrade_lineaire
     {
-        
         height: 5px;
         background: linear-gradient(rgb(206, 205, 205), $couleur-4);
     }
@@ -148,14 +152,12 @@ header
     {
         font-family:'roboto_regular',serif;
         display: flex;
-      
         justify-content: center;
         background-color:$couleur-4;
         .localisation
         {
             background-color: $couleur-4;
             border: none;
-            
             margin-left: 40px;
             font-size: 1.5em;
             padding: auto;
@@ -165,14 +167,12 @@ header
             font-size: 1.5em;
         }
     }
-    
     form
     {
         background-color: lighten($couleur-4, 5);
         display: flex;
         flex-direction: column;
         text-align: center;
-        
         h1
         {
             font-family: roboto_bold, serif;
@@ -182,7 +182,6 @@ header
         {
             font-family: roboto_regular, serif;
             font-size: 1.5em;
-                     
         }
         a
         {
@@ -199,19 +198,15 @@ header
             color: white;
             font-size: 1.3em;
             padding-top: 20px;
-            
             padding-left: 25px;
             padding-right: 25px;
             font-family: 'roboto_regular';
-            
                 &:active
                 {
                     @include hover_bouton
                 }
         }
     }
-    
-    
 }
 
 section
@@ -222,15 +217,12 @@ section
         padding-left: 40px;
         margin-top: 45px;
         margin-bottom: 5px;
-        
     }
     #etapes_fonctionnement
     {
         display: flex;
         justify-content: space-around;
         vertical-align: middle;
-      
-        
             mark
             {
                 border: 1px solid $couleur-primaire;
@@ -248,9 +240,7 @@ section
                 
                 padding-left: 15px;
                 padding-right: 25px;
-                
                 font-size: 1.6em;
-               
                 vertical-align: middle;
                 height: 30px;
                 color: $couleur-5;
@@ -261,8 +251,6 @@ section
                 width: 370px;
                 vertical-align: middle;
                 padding-top: 30px;
-                
-               
                 font-family:  'roboto_regular';
                 font-size: 1.2em;
                 background-color: lighten($couleur-4,5);
@@ -276,7 +264,6 @@ section
                         color: $couleur-primaire; 
                     }
                 }
-
             }
     }
 }
@@ -285,8 +272,8 @@ section
     {
         display: flex;
         justify-content: space-around;
-        
     }
+
 article
 {
     background-color: $couleur-4;
@@ -300,6 +287,7 @@ article
         padding-top: 50px;
     }
 }
+
 .image_la_palette_du_gout
 {
     background-image: url(/public/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
@@ -318,13 +306,10 @@ article
         margin-left: 220px;
         position: relative;
         top: 20px;
-        
         background-color: $couleur-tertiaire;
         color: darken($couleur-tertiaire,40);   
-        //display: none;
+        //display: none;  // Permet de faire disparaitre le texte "NOUVEAU" si besoin.
     }
-        
-        
 }
 
 .image_la_note_enchantee
@@ -344,10 +329,9 @@ article
         margin-left: 220px;
         position: relative;
         top: 20px;
-        
         background-color: $couleur-tertiaire;
         color: darken($couleur-tertiaire,40);
-        //display: none;
+        //display: none;  // Permet de faire disparaitre le texte "NOUVEAU" si besoin.
     }
 }
 
@@ -368,7 +352,6 @@ article
         margin-left: 220px;
         position: relative;
         top: 20px;
-       
         background-color: $couleur-tertiaire;
         color: darken($couleur-tertiaire,40);
         display: none;
@@ -392,18 +375,15 @@ article
         margin-left: 220px;
         position: relative;
         top: 20px;
-      
         background-color: $couleur-tertiaire;
         color: darken($couleur-tertiaire,40);
         display: none;
     }
 }
 
-
 #les_restaurants
 {   
     height: 350px;
-
     .etiquette_restaurant
     {    
         box-shadow: 6px 6px 10px darken($couleur-4,10);
@@ -413,7 +393,6 @@ article
         {
             text-decoration: none;
         }
-       
         .zone_legende
         {
             display: flex;
@@ -438,12 +417,11 @@ article
                 padding-top: 25px;
                 margin-right: 30px;
                 font-size: 1.5em;
-                
-                &:active
-                {
-                @include coeur_hover();
-                animation: coeur 500ms ease-in-out;
-                }
+                    &:active
+                    {
+                    @include coeur_hover();
+                    animation: coeur 500ms ease-in-out;
+                    }
             }
         }
     }
@@ -451,7 +429,6 @@ article
 
 footer
 {
-   
     padding-left: 20px;
     background-color: rgb(51, 51, 51);
     padding-top: 20px;
@@ -460,63 +437,61 @@ footer
     font-family: 'roboto_regular';
         #proposer_restaurant
         {
+            margin-bottom: 10px;
             i
             {
                 font-size: 0.8em;
                 padding-right: 15px;
             }
-            margin-bottom: 10px;
         }
         #devenir_partenaire
         {
+            margin-bottom: 10px;
             i
             {
                 font-size: 0.8em;
                 padding-right: 10px;
             }
-            margin-bottom: 10px;
         }
         .options_footer
         {
             text-decoration: none;
             color: white;
         }
-    
-    #logo_texte_footer
-    {
-        font-family: 'shrikhand';
-        font-size: 1.2em;
-        color: white;
-        margin-top: 0px;
-    }
-    #contact
-    {
-        margin-top: 10px;
-    }
+        #logo_texte_footer
+        {
+            font-family: 'shrikhand';
+            font-size: 1.2em;
+            color: white;
+            margin-top: 0px;
+        }
+        #contact
+        {
+            margin-top: 10px;
+        }
 }
+
+////////// MISE EN FORME POUR LE RESPONSIVE //////////
 
 @media only screen and (max-width: 1600px)
 {
-   
     body
     {
         width: 100%;
         margin: 0px;
-        
         #loading
         {
-        font-size: 10em;
-        height: 100%;
-        width: 100%;
-        padding: 20px;
-        padding-bottom: 5px;
-        
-        color: white;
-        border-radius: 50px;
-        position: relative;
-        left: 30%;
-        top: 100px;
-        transform-origin: 50% 50%;
+            font-size: 10em;
+            height: 100%;
+            width: 100%;
+            padding: 20px;
+            padding-bottom: 5px;
+            color: white;
+            border-radius: 50px;
+            position: relative;
+            left: 30%;
+            top: 100px;
+            transform-origin: 50% 50%;
             p
             {
                 font-size: 0.12em;
@@ -524,14 +499,12 @@ footer
                 margin-bottom: 0px;
                 padding-left: 20px;
                 font-family: 'shrikhand';
-                
             }
-       
     }
 }
+
     header
     {
-        
         width: 100%;
         margin-left: 0px;
         margin-right: 0px;
@@ -544,12 +517,11 @@ footer
                 font-size: 2em;
                 display: flex;
                justify-content: center; 
-                
             }
             form
             {
                 #choisir_ville
-                {           
+                {
                     width: 100%;
                     font-size: 0.8em;
                 }
@@ -585,10 +557,10 @@ footer
                     width: 40%;
                     height: 35px;
                     font-size: 0.9em;
-
                 }
             }
     }
+
     #fonctionnement
     {
         h1
@@ -604,13 +576,19 @@ footer
             .etape
             {
                 width: 100%;
-               
             }
         }
     }
+
+    #restaurants
+    {
+        h1
+        {
+            padding-left: 20px;
+        }
+    }
+    
     #les_restaurants
-    
-    
     {
         height: auto;
         display: flex;
@@ -618,29 +596,30 @@ footer
         vertical-align: middle;
         width: 100%;
         padding-bottom: 50px;
-
-        
     }
+
     .etiquette_restaurant
     {
-        
         margin-bottom: 20px;
         width: 90%;
         margin-left: 20px;
     }
+
     .image_la_palette_du_gout 
     {
         width: 100%;
-
     }
+
     .image_la_note_enchantee
     {
         width: 100%;
     }
+
     .image_a_la_francaise
     {
         width: 100%;
     }
+    
     .image_le_delice_des_sens
     {
         width: 100%;

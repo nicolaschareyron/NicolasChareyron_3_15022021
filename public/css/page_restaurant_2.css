@@ -94,7 +94,7 @@ header p {
 section #entete_restaurant {
   background-size: cover;
   background-position: center;
-  background-image: url(/public/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-image: url(/public/img/stil-u2Lp8tXIcjw-unsplash.jpg);
   height: 400px;
   display: flex;
   justify-content: space-between;
@@ -280,6 +280,30 @@ section article .pastille_3:active .le_prix {
 section article .pastille_3:active .nom_et_recette {
   animation: trois_points 300ms ease-in-out both;
 }
+section article .pastille_4 {
+  display: flex;
+  justify-content: flex-start;
+  background-color: white;
+  height: 100px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-right: 15px;
+  border-radius: 20px;
+  box-shadow: 6px 6px 10px #c4c4c4;
+  animation: un_plat 1200ms ease-in-out 900ms both;
+}
+section article .pastille_4:active .choisir_le_plat {
+  animation: validation 300ms ease-in-out both;
+}
+section article .pastille_4:active .valide {
+  animation: rotation_validation 300ms ease-in-out both;
+}
+section article .pastille_4:active .le_prix {
+  animation: animation_prix 300ms ease-in-out both;
+}
+section article .pastille_4:active .nom_et_recette {
+  animation: trois_points 300ms ease-in-out both;
+}
 
 aside {
   background-color: #dddddd;
@@ -372,6 +396,7 @@ footer #contact {
   section #entete_restaurant h1 {
     padding-left: 0px;
     font-size: 1.8em;
+    margin-left: 10px;
   }
   section #entete_restaurant i {
     margin-right: 40px;
@@ -420,6 +445,18 @@ footer #contact {
     animation: animation_prix_responsive 300ms ease-in-out both;
   }
   section article .pastille_3:active .nom_et_recette {
+    animation: trois_points_responsive 300ms ease-in-out both;
+  }
+  section article .pastille_4:active .choisir_le_plat {
+    animation: validation_responsive 300ms ease-in-out both;
+  }
+  section article .pastille_4:active .valide {
+    animation: rotation_validation 400ms ease-in-out both;
+  }
+  section article .pastille_4:active .le_prix {
+    animation: animation_prix_responsive 300ms ease-in-out both;
+  }
+  section article .pastille_4:active .nom_et_recette {
     animation: trois_points_responsive 300ms ease-in-out both;
   }
   section .entrees {

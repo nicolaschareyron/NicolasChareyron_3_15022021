@@ -473,6 +473,10 @@ footer #contact {
     width: 100%;
   }
 
+  #restaurants h1 {
+    padding-left: 20px;
+  }
+
   #les_restaurants {
     height: auto;
     display: flex;
