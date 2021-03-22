@@ -1,14 +1,14 @@
 @font-face {
   font-family: "shrikhand";
-  src: url(/public/fonts/Shrikhand/Shrikhand-Regular.ttf) format("truetype");
+  src: url(../fonts/Shrikhand/Shrikhand-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "roboto_regular";
-  src: url(/public/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+  src: url(../fonts/Roboto/Roboto-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "roboto_bold";
-  src: url(/public/fonts/Roboto/Roboto-Bold.ttf) format("truetype");
+  src: url(../fonts/Roboto/Roboto-Bold.ttf) format("truetype");
 }
 @keyframes coeur {
   0% {
@@ -94,7 +94,7 @@ header p {
 section #entete_restaurant {
   background-size: cover;
   background-position: center;
-  background-image: url(/public/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-image: url(../img/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   height: 400px;
   display: flex;
   justify-content: space-between;
@@ -224,7 +224,7 @@ section article .pastille_1:active .choisir_le_plat {
   animation: validation 300ms ease-in-out both;
 }
 section article .pastille_1:active .valide {
-  animation: rotation_validation 400ms ease-in-out both;
+  animation: rotation_validation 300ms ease-in-out both;
 }
 section article .pastille_1:active .le_prix {
   animation: animation_prix 300ms ease-in-out both;

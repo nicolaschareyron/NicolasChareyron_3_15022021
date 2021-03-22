@@ -1,11 +1,11 @@
 /////// FONTS ////////
 
 @font-face
-{font-family:'shrikhand'; src: url(/public/fonts/Shrikhand/Shrikhand-Regular.ttf) format('truetype');}
+{font-family:'shrikhand'; src: url(../fonts/Shrikhand/Shrikhand-Regular.ttf) format('truetype');}
 @font-face
-{font-family:'roboto_regular'; src: url(/public/fonts/Roboto/Roboto-Regular.ttf) format('truetype');}
+{font-family:'roboto_regular'; src: url(../fonts/Roboto/Roboto-Regular.ttf) format('truetype');}
 @font-face
-{font-family:'roboto_bold'; src: url(/public/fonts/Roboto/Roboto-Bold.ttf) format('truetype');}
+{font-family:'roboto_bold'; src: url(../fonts/Roboto/Roboto-Bold.ttf) format('truetype');}
 
 ///////////// VARIABLES /////////////
 
@@ -183,7 +183,7 @@ section
     {
         background-size: cover;
         background-position: center;        
-        background-image: url(/public/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+        background-image: url(../img/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
         height: 400px;
         display: flex;
         justify-content: space-between;
@@ -318,7 +318,7 @@ section
                     }
                     .valide
                     {
-                    animation: rotation_validation 400ms ease-in-out both;
+                    animation: rotation_validation 300ms ease-in-out both;
                     }
                     .le_prix
                     {

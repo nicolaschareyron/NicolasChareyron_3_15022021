@@ -1,11 +1,11 @@
 ////// FONTS /////////
 
 @font-face
-{font-family:'shrikhand'; src: url(./public/fonts/Shrikhand/Shrikhand-Regular.ttf) format('truetype');}
+{font-family:'shrikhand'; src: url(../fonts/Shrikhand/Shrikhand-Regular.ttf) format('truetype');}
 @font-face
-{font-family:'roboto_regular'; src: url(./public/fonts/Roboto/Roboto-Regular.ttf) format('truetype');}
+{font-family:'roboto_regular'; src: url(../fonts/Roboto/Roboto-Regular.ttf) format('truetype');}
 @font-face
-{font-family:'roboto_bold'; src: url(./public/fonts/Roboto/Roboto-Bold.ttf) format('truetype');}
+{font-family:'roboto_bold'; src: url(../fonts/Roboto/Roboto-Bold.ttf) format('truetype');}
 
 ///////////// VARIABLES ///////////
 
@@ -290,7 +290,7 @@ article
 
 .image_la_palette_du_gout
 {
-    background-image: url(/public/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-image: url(../img/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
     width: 200px;
     @include format_image;
     figcaption
@@ -314,7 +314,7 @@ article
 
 .image_la_note_enchantee
 {
-    background-image: url(/public/img/stil-u2Lp8tXIcjw-unsplash.jpg);
+    background-image: url(../img/stil-u2Lp8tXIcjw-unsplash.jpg);
     @include format_image;
     figcaption
     {
@@ -337,7 +337,7 @@ article
 
 .image_a_la_francaise
 {
-    background-image: url(/public/img/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    background-image: url(../img/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
     @include format_image;
     figcaption
     {
@@ -360,7 +360,7 @@ article
 
 .image_le_delice_des_sens
 {
-    background-image: url(/public/img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+    background-image: url(../img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
     @include format_image;
     figcaption
     {
