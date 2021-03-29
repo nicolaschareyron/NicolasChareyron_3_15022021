@@ -2,10 +2,13 @@
 
 @font-face
 {font-family:'shrikhand'; src: url(../fonts/Shrikhand/Shrikhand-Regular.ttf) format('truetype');}
+
 @font-face
 {font-family:'roboto_regular'; src: url(../fonts/Roboto/Roboto-Regular.ttf) format('truetype');}
+
 @font-face
 {font-family:'roboto_bold'; src: url(../fonts/Roboto/Roboto-Bold.ttf) format('truetype');}
+
 
 ///////////// VARIABLES ///////////
 
@@ -16,27 +19,28 @@ $couleur-4:#dddddd;
 $couleur-5:rgb(110, 109, 109);
  
 /////////// MIXIN ////////////
-
-@mixin format_image // Mise en format des photos des restaurants
+// Mise en format des photos des restaurants
+@mixin format_image 
 {
     background-size: cover;
     background-position: center;
     width: 350px;
     height: 200px;
-    border-top-left-radius:20px ;
-    border-top-right-radius:20px ;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     margin:0px
 }
-
-@mixin coeur_hover // Format du remplissage des icones en coeurs
+// Format du remplissage des icones en coeurs
+@mixin coeur_hover 
 {
     font-weight: bold;            
     background: linear-gradient(180deg, (darken($couleur-primaire,30)), (lighten($couleur-secondaire,5)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+// La couleur des boutons quand on clique dessus 
 
-@mixin hover_bouton // La couleur des boutons quand on clique dessus 
+@mixin hover_bouton 
 {
     background: linear-gradient(170deg,(lighten($couleur-secondaire,5)),(lighten($couleur-primaire,5)));
     box-shadow: 6px 6px 10px darken($couleur-4,25);
@@ -160,7 +164,7 @@ header
             border: none;
             margin-left: 40px;
             font-size: 1.5em;
-            padding: auto;
+            
         }
         i
         {
@@ -201,7 +205,7 @@ header
             padding-left: 25px;
             padding-right: 25px;
             font-family: 'roboto_regular';
-                &:active
+                &:hover
                 {
                     @include hover_bouton
                 }
@@ -256,7 +260,7 @@ section
                 background-color: lighten($couleur-4,5);
                 border-radius: 20px;
                 box-shadow: 6px 6px 10px darken($couleur-4,8);
-                &:active
+                &:hover
                 {
                     background-color: lighten($couleur-primaire,30);
                     i
@@ -417,7 +421,7 @@ article
                 padding-top: 25px;
                 margin-right: 30px;
                 font-size: 1.5em;
-                    &:active
+                    &:hover
                     {
                     @include coeur_hover();
                     animation: coeur 500ms ease-in-out;

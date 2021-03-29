@@ -203,7 +203,7 @@ section
             font-size: 2.5em;
             margin-right: 80px;
             padding-top: 39px;
-                &:active
+                &:hover
                 {        
                     @include coeur_hover();
                     animation: coeur 500ms ease-in-out;
@@ -310,7 +310,7 @@ section
             {
                 @include encadre_plat();
                 animation: un_plat 1200ms ease-in-out 50ms both;
-                &:active
+                &:hover
                 {
                     .choisir_le_plat
                     {
@@ -334,7 +334,7 @@ section
             {
                 @include encadre_plat();
                 animation: un_plat 1200ms ease-in-out 300ms both;
-                &:active
+                &:hover
                 {
                     .choisir_le_plat
                     {
@@ -358,7 +358,7 @@ section
             {
                 @include encadre_plat();
                 animation: un_plat 1200ms ease-in-out 600ms both;
-                &:active
+                &:hover
                 {
                     .choisir_le_plat
                     {
@@ -382,7 +382,7 @@ section
             {
                 @include encadre_plat();
                 animation: un_plat 1200ms ease-in-out 900ms both;
-                &:active
+                &:hover
                 {
                     .choisir_le_plat
                     {
@@ -429,7 +429,7 @@ aside
             font-family: roboto_regular, serif;
             text-decoration: none;
             box-shadow: 6px 6px 10px darken($couleur-4,15);
-                &:active
+                &:hover
                 {
                     @include hover_bouton
                 }

@@ -114,7 +114,7 @@ section #entete_restaurant i {
   margin-right: 80px;
   padding-top: 39px;
 }
-section #entete_restaurant i:active {
+section #entete_restaurant i:hover {
   font-weight: bold;
   background: linear-gradient(180deg, #481a7f, #ff93e1);
   -webkit-background-clip: text;
@@ -220,16 +220,16 @@ section article .pastille_1 {
   box-shadow: 6px 6px 10px #c4c4c4;
   animation: un_plat 1200ms ease-in-out 50ms both;
 }
-section article .pastille_1:active .choisir_le_plat {
+section article .pastille_1:hover .choisir_le_plat {
   animation: validation 300ms ease-in-out both;
 }
-section article .pastille_1:active .valide {
+section article .pastille_1:hover .valide {
   animation: rotation_validation 300ms ease-in-out both;
 }
-section article .pastille_1:active .le_prix {
+section article .pastille_1:hover .le_prix {
   animation: animation_prix 300ms ease-in-out both;
 }
-section article .pastille_1:active .nom_et_recette {
+section article .pastille_1:hover .nom_et_recette {
   animation: trois_points 300ms ease-in-out both;
 }
 section article .pastille_2 {
@@ -244,16 +244,16 @@ section article .pastille_2 {
   box-shadow: 6px 6px 10px #c4c4c4;
   animation: un_plat 1200ms ease-in-out 300ms both;
 }
-section article .pastille_2:active .choisir_le_plat {
+section article .pastille_2:hover .choisir_le_plat {
   animation: validation 300ms ease-in-out both;
 }
-section article .pastille_2:active .valide {
+section article .pastille_2:hover .valide {
   animation: rotation_validation 300ms ease-in-out both;
 }
-section article .pastille_2:active .le_prix {
+section article .pastille_2:hover .le_prix {
   animation: animation_prix 300ms ease-in-out both;
 }
-section article .pastille_2:active .nom_et_recette {
+section article .pastille_2:hover .nom_et_recette {
   animation: trois_points 300ms ease-in-out both;
 }
 section article .pastille_3 {
@@ -268,16 +268,16 @@ section article .pastille_3 {
   box-shadow: 6px 6px 10px #c4c4c4;
   animation: un_plat 1200ms ease-in-out 600ms both;
 }
-section article .pastille_3:active .choisir_le_plat {
+section article .pastille_3:hover .choisir_le_plat {
   animation: validation 300ms ease-in-out both;
 }
-section article .pastille_3:active .valide {
+section article .pastille_3:hover .valide {
   animation: rotation_validation 300ms ease-in-out both;
 }
-section article .pastille_3:active .le_prix {
+section article .pastille_3:hover .le_prix {
   animation: animation_prix 300ms ease-in-out both;
 }
-section article .pastille_3:active .nom_et_recette {
+section article .pastille_3:hover .nom_et_recette {
   animation: trois_points 300ms ease-in-out both;
 }
 
@@ -305,7 +305,7 @@ aside a {
   text-decoration: none;
   box-shadow: 6px 6px 10px #b7b7b7;
 }
-aside a:active {
+aside a:hover {
   background: linear-gradient(170deg, #ff93e1, #a16be0);
   box-shadow: 6px 6px 10px #9d9d9d;
 }

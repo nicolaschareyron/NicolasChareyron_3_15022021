@@ -97,7 +97,6 @@ header div .localisation {
   border: none;
   margin-left: 40px;
   font-size: 1.5em;
-  padding: auto;
 }
 header div i {
   font-size: 1.5em;
@@ -134,7 +133,7 @@ header form a {
   padding-right: 25px;
   font-family: "roboto_regular";
 }
-header form a:active {
+header form a:hover {
   background: linear-gradient(170deg, #ff93e1, #a16be0);
   box-shadow: 6px 6px 10px #9d9d9d;
 }
@@ -180,10 +179,10 @@ section #etapes_fonctionnement .etape {
   border-radius: 20px;
   box-shadow: 6px 6px 10px #c9c9c9;
 }
-section #etapes_fonctionnement .etape:active {
+section #etapes_fonctionnement .etape:hover {
   background-color: #e4d5f6;
 }
-section #etapes_fonctionnement .etape:active i {
+section #etapes_fonctionnement .etape:hover i {
   color: #9356DC;
 }
 
@@ -344,7 +343,7 @@ article h1 {
   margin-right: 30px;
   font-size: 1.5em;
 }
-#les_restaurants .etiquette_restaurant .zone_legende i:active {
+#les_restaurants .etiquette_restaurant .zone_legende i:hover {
   font-weight: bold;
   background: linear-gradient(180deg, #481a7f, #ff93e1);
   -webkit-background-clip: text;

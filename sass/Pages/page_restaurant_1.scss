@@ -1,5 +1,3 @@
-/////// FONTS ////////
-
 @font-face
 {font-family:'shrikhand'; src: url(../fonts/Shrikhand/Shrikhand-Regular.ttf) format('truetype');}
 @font-face
@@ -7,23 +5,19 @@
 @font-face
 {font-family:'roboto_bold'; src: url(../fonts/Roboto/Roboto-Bold.ttf) format('truetype');}
 
-///////////// VARIABLES /////////////
-
 $couleur-primaire:#9356DC;
 $couleur-secondaire:#FF79DA;
 $couleur-tertiaire:#99E2D0;
 $couleur-4:#dddddd;
 $couleur-5:rgb(110, 109, 109);
 
-///////// MIXIN //////////
-
-@mixin hover_bouton // La couleur des boutons quand on clique dessus
+@mixin hover_bouton
 {
     background: linear-gradient(170deg,(lighten($couleur-secondaire,5)),(lighten($couleur-primaire,5)));
     box-shadow: 6px 6px 10px darken($couleur-4,25);
 }
 
-@mixin coeur_hover  // Format du remplissage des icones en coeurs
+@mixin coeur_hover
 {
         font-weight: bold;
         background: linear-gradient(180deg, (darken($couleur-primaire,30)), (lighten($couleur-secondaire,5)));
@@ -31,7 +25,7 @@ $couleur-5:rgb(110, 109, 109);
         -webkit-text-fill-color: transparent;
 }
 
-@mixin encadre_plat 
+@mixin encadre_plat
 {
     display: flex;
     justify-content: flex-start;
@@ -44,9 +38,6 @@ $couleur-5:rgb(110, 109, 109);
     box-shadow: 6px 6px 10px darken($couleur-4,10);
 }
 
-/////// KEYFRAMES ////////
-
-// Animation remplissage du coeur
 @keyframes coeur
 {
     0%
@@ -59,7 +50,6 @@ $couleur-5:rgb(110, 109, 109);
     }
 }
 
-// Animation pour faire apparaitre les plats les uns après les autres
 @keyframes un_plat
 { 
     0%
@@ -80,14 +70,12 @@ $couleur-5:rgb(110, 109, 109);
     }
 }
 
-// Animation pour faire bouger le prix
 @keyframes animation_prix
 {
     0%{}
     100%{transform: translate(-50px);}
 }
 
-// Animation pour faire bouger le prix en responsive
 @keyframes animation_prix_responsive
 {
     0%
@@ -98,7 +86,6 @@ $couleur-5:rgb(110, 109, 109);
     }
 }
 
-// Animation pour faire apparaitre le cadre de validation du plat
 @keyframes validation
 {
     0%
@@ -109,7 +96,6 @@ $couleur-5:rgb(110, 109, 109);
     }
 }
 
-// Animation pour faire apparaitre le cadre de validation du plat en responsive
 @keyframes validation_responsive
 {
     0%
@@ -120,7 +106,6 @@ $couleur-5:rgb(110, 109, 109);
     }
 }
 
-// Animation pour faire tourner l'icone de validation
 @keyframes rotation_validation
 {
     0%
@@ -131,7 +116,6 @@ $couleur-5:rgb(110, 109, 109);
     }
 }
 
-// Animation pour créer l'effet des trois points quand le texte est trop long
 @keyframes trois_points
 {
     0%
@@ -142,14 +126,12 @@ $couleur-5:rgb(110, 109, 109);
     }
 }
 
-// Animation pour créer l'effet des trois points quand le texte est trop long en responsive
 @keyframes trois_points_responsive
 {
     0%{}
     100%{min-width: 50%;}
 }
 
-/////// MISE EN FORME ///////
 body
 {
     margin-left: 20px;
@@ -203,7 +185,7 @@ section
             font-size: 2.5em;
             margin-right: 80px;
             padding-top: 39px;
-                &:active
+                &:hover
                 {        
                     @include coeur_hover();
                     animation: coeur 500ms ease-in-out;
@@ -310,7 +292,7 @@ section
             {
                 @include encadre_plat();
                 animation: un_plat 1200ms ease-in-out 50ms both;
-                &:active
+                &:hover
                 {
                     .choisir_le_plat
                     {
@@ -334,7 +316,7 @@ section
             {
                 @include encadre_plat();
                 animation: un_plat 1200ms ease-in-out 300ms both;
-                &:active
+                &:hover
                 {
                     .choisir_le_plat
                     {
@@ -358,7 +340,7 @@ section
             {
                 @include encadre_plat();
                 animation: un_plat 1200ms ease-in-out 600ms both;
-                &:active
+                &:hover
                 {
                     .choisir_le_plat
                     {
@@ -405,7 +387,7 @@ aside
             font-family: roboto_regular, serif;
             text-decoration: none;
             box-shadow: 6px 6px 10px darken($couleur-4,15);
-                &:active
+                &:hover
                 {
                     @include hover_bouton
                 }
@@ -455,8 +437,6 @@ footer
             margin-top: 10px;
         }
 }
-
-//////////// MISE EN FORME DU RESPONSIVE ////////
 
 @media only screen and (max-width: 1700px)
 {
