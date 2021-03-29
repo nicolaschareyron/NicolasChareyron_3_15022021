@@ -22,6 +22,9 @@
   }
 }
 @keyframes hide_loading {
+  0% {
+    width: 250px;
+  }
   99% {
     opacity: 1;
     width: 250px;

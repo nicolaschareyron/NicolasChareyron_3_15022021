@@ -68,6 +68,10 @@ $couleur-5:rgb(110, 109, 109);
 // Animation du loader spinner
 @keyframes hide_loading
 {
+    0%
+    {
+        width: 250px;
+    }
     
     99%
     {
